@@ -35,7 +35,7 @@
 
 1. Клонируйте репозиторий и перейдите в директорию с API-проектом:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/reightenfels/Simple-Employee-API.git
    cd EmployeeApp.Api
 2. Запустите приложение с помощью CLI:
    ```bash

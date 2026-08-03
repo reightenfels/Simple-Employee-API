@@ -37,4 +37,6 @@
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd EmployeeApp.Api
+2. Запустите приложение с помощью CLI:
+   ```bash
    dotnet run

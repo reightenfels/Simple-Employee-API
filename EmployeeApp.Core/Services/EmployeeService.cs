@@ -22,8 +22,8 @@ public class EmployeeService : IEmployeeService
         return new EmployeeDTO
         {
             Id = employee.Id,
-            DepartmentName = employee.Department != null ? employee.Department.Name : "",
-            ChiefName = employee.Chief != null ? employee.Chief.Name : "",
+            DepartmentId = employee.DepartmentId,
+            ChiefId = employee.ChiefId,
             Name = employee.Name,
             Salary = employee.Salary
         };

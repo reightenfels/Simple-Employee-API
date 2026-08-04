@@ -66,7 +66,7 @@ public class EmployeeService : IEmployeeService
             employee.DepartmentId = dto.DepartmentId;
             employee.ChiefId = dto.ChiefId;
             employee.Name = dto.Name;
-            employee.Salary = dto.Salary; 
+            employee.Salary = dto.Salary * 100; 
 
             await _repository.SaveChangesAsync();
         }
@@ -77,7 +77,7 @@ public class EmployeeService : IEmployeeService
                 DepartmentId = dto.DepartmentId,
                 ChiefId = dto.ChiefId,
                 Name = dto.Name,
-                Salary = dto.Salary
+                Salary = dto.Salary * 100
             };
 
             await _repository.CreateAsync(employee);

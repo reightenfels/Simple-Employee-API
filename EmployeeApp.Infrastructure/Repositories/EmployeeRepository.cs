@@ -16,7 +16,7 @@ public class EmployeeRepository : IEmployeeRepository
 
     public async Task<IEnumerable<Employee>> FindAllAsync()
     {
-        return await _context.Employees.ToListAsync();
+        return await _context.Employees.OrderBy(e => e.Id).ToListAsync();
     }
 
     public async Task<Employee?> FindByIdAsync(long id)
